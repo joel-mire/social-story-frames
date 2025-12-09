@@ -1,0 +1,99 @@
+id: "replication"
+
+force_redo:
+  # Preprocess corpus
+  subreddit_metadata_sum: false
+  corpus_init: false
+  # Reference Inference Generation
+  ref_plausible_inf_gen: false
+  ref_implausible_inf_gen: false
+  # SSF-Generator Finetuning
+  ssf_gen_ft: false
+  # SSF-Generator Inference Generation
+  ssf_gen_inf: false
+  # Reference Inference Classification
+  ref_inf_class_val: false
+  ref_inf_class_test: false
+  ref_inf_class_train: false
+  # SSF-Classifier Finetuning
+  ssf_class_ft: false
+  # SSF-Classifier Inference Classification
+  ssf_class_val: false
+  ssf_class_test: false
+  ssf_class_all: false
+  # Ablations
+  ablations: false
+
+ft:
+  base_model: "meta-llama/Llama-3.1-8B-Instruct"
+  ssf_gen_ft_script_base_name: "llama-3.1-8b-it-ssf_generator"
+  ssf_class_ft_script_base_name: "llama-3.1-8b-it-ssf_classifier" 
+
+tax_class:
+  sampling_strategy: "random_pure_similarity_mmr"
+  demo_counts:
+    overall_goal: 30
+    narrative_intent: 30
+    author_emotional_response: 20
+    causal_explanation: 30
+    prediction: 15
+    moral: 30
+    narrative_feeling: 20
+    aesthetic_feeling: 15
+    character_appraisal: 10
+    stance: 10
+
+random_seeds:
+  default: 25
+  alternative: 42
+
+dirs:
+  data:
+    subreddit_metadata: "../data/replication/subreddit_metadata"
+    corpus: "../data/replication/corpus"
+    ref_inf_gen: "../data/replication/ref_inf_gen"
+    ssf_gen_ft: "../data/replication/ssf_gen_ft"
+    ssf_gen_inf: "../data/replication/ssf_gen_inf"
+    ref_inf_class: "../data/replication/ref_inf_class"
+    ssf_class_ft: "../data/replication/ssf_class_ft"
+    ssf_class_inf: "../data/replication/ssf_class_inf"
+    annotations: "../data/replication/annotations"
+    ablations: "../data/replication/ablations"
+    analysis: "../data/replication/analysis"
+    similarity: "../data/replication/analysis/similarity"
+    plausibility_error_analyses: "../data/replication/analysis/plausibility_error_analyses"
+    ssf_sim_global_validation: "../data/replication/analysis/similarity/ssf_sim_global_validation"
+    
+models:
+  ssf_base: "meta-llama/Llama-3.1-8B-Instruct"
+  openai_default: "gpt-4o-2024-11-20"
+  openai_tax_class: "gpt-4.1-2025-04-14"
+  sbert_model: all-MiniLM-L6-v2
+
+inference:
+  ssf_batch_size: 60
+  ssf_max_model_len: 2304
+
+corpus:
+  original_name: "reddit-corpus-small"
+  extension_name: "ssf-corpus"
+  source_conversations_coverage: 0.1
+  convo_context:
+    max_utt_summary_sentences: 2
+    context_chain_utts: 5
+  story_seeker_threshold: 0.7
+  perspective_toxicity_threshold: 0.5
+  perspective_sexually_explicit_threshold: 0.5
+  disqualification_strings: ["", "deleted", "removed", "[deleted]", "[removed]", "clean"]
+  substantial_text_min_chars:
+    story: 175
+    context_utt: 15
+    initial_post_title: 10
+  community_meta_key: "subreddit"
+
+context:
+  include_community_name: true
+  include_community_description: true
+  include_community_values: true
+  include_progenitor_summary: true
+  include_conversation_summary: true

@@ -1,0 +1,17 @@
+\begin{table*}[h]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+comparison & $n$ & $\bar{x}_1$ & $\bar{x}_2$ & $t$ & $d$ & $p_{\text{holm}}$ \\
+\midrule
+    comm\_ctx vs no\_ctx & 2865 & 0.521 & 0.517 & 2.251 & 0.030 & \textbf{0.024} \\
+    conv\_ctx vs no\_ctx & 2943 & 0.539 & 0.517 & 11.068 & 0.159 & \textbf{1.27e-27} \\
+    comm+conv\_ctx vs comm\_ctx & 2877 & 0.542 & 0.521 & 10.269 & 0.151 & \textbf{3.83e-24} \\
+    comm+conv\_ctx vs conv\_ctx & 2959 & 0.542 & 0.539 & 1.522 & 0.019 & 0.064 \\
+    comm+conv\_ctx vs no\_ctx & 2947 & 0.542 & 0.517 & 12.078 & 0.178 & \textbf{2.03e-32} \\
+\bottomrule
+\end{tabular}
+\caption{\ssfGenerator SFT Distillation Context Ablation Results. We compare \ssfGenerator variants' inferences against GPT-4o reference inferences via one-sided paired t-tests of cosine similarities, based on the hypothesis that more context will lead to greater inference similarity than less context. Statistically significant results (Holm–Bonferroni corrected) are in \textbf{bold}.}
+\label{tab:ablation_ttests}
+\end{table*}

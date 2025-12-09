@@ -1,0 +1,11 @@
+dimension,template
+overall_goal,Many readers from this subreddit would think that the author's overall goal in posting/commenting this text was to {{SHORT VERB PHRASE DESCRIBING OVERALL GOAL}}.
+narrative_intent,Many readers from this subreddit would think that the author told the story in their post/comment to {{SHORT VERB PHRASE DESCRIBING NARRATIVE INTENT}}.
+author_emotional_response,Many readers from this subreddit would think that telling the story in their post/comment would cause the author of the post/comment to feel {{SHORT NOUN PHRASE DESCRIBING EMOTION}}.
+causal_explanation,"While or after reading the story within the post/comment, many readers from this subreddit would think that {{SHORT DESCRIPTION OF SITUATION/STATE/ACTION FROM STORY}} could be explained by {{SHORT EXPLANATION}}."
+prediction,"While or after reading the story within the post/comment, many readers from this subreddit would predict that {{EITHER ""the narrator"" or NAME/IDENTIFIER OF OTHER CHARACTER OR THING FROM STORY}} might {{SHORT DESCRIPTION OF ACTION OR STATE}}."
+moral,"While or after reading the story within the post/comment, many readers from this subreddit would think that the moral of the story is {{MORAL/THEME}}."
+narrative_feeling,"While or after reading the story within the post/comment, the narrative content (i.e., the characters' situation and events) would spur many readers from this subreddit to feel {{FEELING/EMOTION}}."
+aesthetic_feeling,"While or after reading the story within the post/comment, the narrative form/techniques such as {{BRIEF DESCRIPTION OF TECHNIQUE OR FORMAL ELEMENT}} would spur many readers from this subreddit to feel {{FEELING}}."
+character_appraisal,"While or after reading the story within this text, many readers from this subreddit would {{EITHER ""positively"", ""negatively"", or ""neutrally""}} judge {{EITHER ""narrator"" OR IDENTIFIER/NAME OF OTHER CHARACTER FROM STORY}}."
+stance,"After reading the story within this text, many readers from this subreddit would {{EITHER ""support"", ""counter"", or ""be neutral to""}} the author's opinion{{SHORT DESCRIPTION OF AUTHOR'S OPINION/STANCE}}."

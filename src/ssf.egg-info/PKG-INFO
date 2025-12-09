@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: ssf
+Version: 0.1.0
+Summary: SSF project
+Requires-Python: >=3.8
+Requires-Dist: pyyaml
+Requires-Dist: pydantic>=2.0

@@ -1,0 +1,6 @@
+comparison,n,mean1,mean2,t,cohen_d,p_holm
+comm_ctx vs no_ctx,2865,0.521,0.517,2.251,0.03,0.024
+conv_ctx vs no_ctx,2943,0.539,0.517,11.068,0.159,1.266e-27
+comm+conv_ctx vs comm_ctx,2877,0.542,0.521,10.269,0.151,3.829e-24
+comm+conv_ctx vs conv_ctx,2959,0.542,0.539,1.522,0.019,0.064
+comm+conv_ctx vs no_ctx,2947,0.542,0.517,12.078,0.178,2.026e-32

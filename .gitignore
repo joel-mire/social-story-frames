@@ -40,3 +40,7 @@ POTATO/
 
 results/similarity/story_pair_selection_results_*
 results/similarity/story_pair_selection_table_*
+
+*.DS_Store
+data/subreddits_metadata/rules_subreddit_set_backup.csv
+scripts/filter_rules_by_subreddits.py

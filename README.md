@@ -1,7 +1,7 @@
 # Social Story Frames
 SocialStoryFrames is a formalism for distilling contextually plausible inferences about reader response to storytelling in online communities. 
 
-This repo contains code and data for replicating the SocialStoryFrames paper: {{LINK}}.
+This repo contains code and data for replicating the SocialStoryFrames paper: https://arxiv.org/abs/2512.15925.
 
 ##### Key Components
 * SSF-Taxonomy: A two-tier taxonomy of 10 dimensions of reader response, grounded in narrative theory, linguistic pragmatics, and psychology.
@@ -64,4 +64,17 @@ After completing either replication method above, run the notebooks in the analy
 Please open an issue or contact [Joel Mire](https://joel-mire.github.io/) with any questions.
 
 ## Citation
-TODO
+```
+@ARTICLE{Joel2025-od,
+  title         = "Social story frames: Contextual reasoning about narrative
+                   intent and reception",
+  author        = "Joel, Mire and Maria, Antoniak and Steven, R Wilson and
+                   Zexin, Ma and Achyutarama, R Ganti and Andrew, Piper and
+                   Maarten, Sap",
+  journal       = "arXiv [cs.CL]",
+  month         =  dec,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL"
+}
+```
